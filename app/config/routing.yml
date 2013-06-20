@@ -3,8 +3,3 @@ jooks_web_service:
     type:     annotation
     prefix:   /
 
-jooks_ws:
-    resource: "@JooksWSBundle/Controller/"
-    type:     annotation
-    prefix:   /
-
