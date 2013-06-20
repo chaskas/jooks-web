@@ -12,6 +12,13 @@ class PlaceType extends AbstractType
     {
         $builder
             ->add('name')
+            ->add('website')
+            ->add('facebook')
+            ->add('twitter')
+            ->add('phone')
+            ->add('contactName')
+            ->add('contactPhone')
+            ->add('contactEmail')
         ;
     }
 

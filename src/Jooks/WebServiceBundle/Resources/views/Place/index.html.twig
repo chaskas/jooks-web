@@ -8,6 +8,13 @@
             <tr>
                 <th>Id</th>
                 <th>Name</th>
+                <th>Website</th>
+                <th>Facebook</th>
+                <th>Twitter</th>
+                <th>Phone</th>
+                <th>Contactname</th>
+                <th>Contactphone</th>
+                <th>Contactemail</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -16,6 +23,13 @@
             <tr>
                 <td><a href="{{ path('admin_place_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
                 <td>{{ entity.name }}</td>
+                <td>{{ entity.website }}</td>
+                <td>{{ entity.facebook }}</td>
+                <td>{{ entity.twitter }}</td>
+                <td>{{ entity.phone }}</td>
+                <td>{{ entity.contactName }}</td>
+                <td>{{ entity.contactPhone }}</td>
+                <td>{{ entity.contactEmail }}</td>
                 <td>
                 <ul>
                     <li>

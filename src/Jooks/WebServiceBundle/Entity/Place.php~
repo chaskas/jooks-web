@@ -30,6 +30,55 @@ class Place
     protected $name;
 
     /**
+    * @var string
+    * @ORM\Column(name="website", type="string", unique=true, nullable=true))
+    *
+    **/
+    protected $website;
+
+    /**
+    * @var string
+    * @ORM\Column(name="facebook", type="string", unique=true, nullable=true))
+    *
+    **/
+    protected $facebook;
+
+    /**
+    * @var string
+    * @ORM\Column(name="twitter", type="string", unique=true, nullable=true))
+    *
+    **/
+    protected $twitter;
+
+    /**
+    * @var string
+    * @ORM\Column(name="phone", type="string", unique=true, nullable=true))
+    *
+    **/
+    protected $phone;
+
+    /**
+    * @var string
+    * @ORM\Column(name="contactName", type="string", unique=true, nullable=true))
+    *
+    **/
+
+    protected $contactName;
+    /**
+    * @var string
+    * @ORM\Column(name="contactPhone", type="string", unique=true, nullable=true))
+    *
+    **/
+    protected $contactPhone;
+
+    /**
+    * @var string
+    * @ORM\Column(name="contactEmail", type="string", unique=true, nullable=true))
+    *
+    **/
+    protected $contactEmail;
+
+    /**
      * Get id
      *
      * @return integer 
@@ -37,5 +86,28 @@ class Place
     public function getId()
     {
         return $this->id;
+    }
+
+    /**
+     * Set name
+     *
+     * @param string $name
+     * @return Place
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+    
+        return $this;
+    }
+
+    /**
+     * Get name
+     *
+     * @return string 
+     */
+    public function getName()
+    {
+        return $this->name;
     }
 }
