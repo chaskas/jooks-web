@@ -1,0 +1,10 @@
+jooks_web_service:
+    resource: "@JooksWebServiceBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+jooks_ws:
+    resource: "@JooksWSBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
