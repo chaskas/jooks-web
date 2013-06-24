@@ -1,0 +1,6 @@
+#src/Jooks/WebServiceBundle/Resources/config/routing.yml
+
+place:
+    type: rest
+    resource: Jooks\WebServiceBundle\Controller\PlaceController
+    prefix:   /ws/places

@@ -1,6 +1,6 @@
 <?php
 
-namespace Jooks\WebServiceBundle\Form;
+namespace Jooks\AdminBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -25,12 +25,12 @@ class PlaceType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'Jooks\WebServiceBundle\Entity\Place'
+            'data_class' => 'Jooks\AdminBundle\Entity\Place'
         ));
     }
 
     public function getName()
     {
-        return 'jooks_webservicebundle_placetype';
+        return 'jooks_adminbundle_placetype';
     }
 }

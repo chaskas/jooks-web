@@ -1,5 +1,13 @@
-jooks_web_service:
-    resource: "@JooksWebServiceBundle/Controller/"
+jooks_admin:
+    resource: "@JooksAdminBundle/Controller/"
     type:     annotation
     prefix:   /
 
+# jooks_web_service:
+#     resource: "@JooksWebServiceBundle/Controller/"
+#     type:     annotation
+#     prefix:   /
+
+jooks_web_service_rest:
+    type: rest
+    resource: "@JooksWebServiceBundle/Resources/config/routing.yml"
